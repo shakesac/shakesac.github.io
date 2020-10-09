@@ -1,0 +1,10 @@
+body, html {
+    background-color: grey;
+}
+p, h1, h2, h3 {
+    color: whitesmoke;
+    font-family: "Lucida Console", Courier, monospace;
+}
+h1, h2, h3 {
+    text-transform: capitalize;
+}
