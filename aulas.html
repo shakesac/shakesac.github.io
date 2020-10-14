@@ -25,10 +25,6 @@
     header p {
         margin-top: 10px;
     }
-    footer {
-        background-color: #1abc9c;
-        height: 90px;
-    }
     details {
             background-color: darkgray;
             color: white;
@@ -75,6 +71,45 @@
     details a p.pw code {
         font-size: large;
         font-weight: normal;
+    }
+    footer {
+        display: flex;
+        background-color: #1abc9c;
+        align-items: flex-start;
+        min-height: 90px;
+        max-height: 120px;
+    }
+    footer > div {
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        margin: 5px 5px;
+        padding: 10px;
+        width: 50%;
+    }
+    footer > div:hover {
+        box-shadow: 2px 2px 2px 2px grey;
+    }
+    footer img {
+        max-height: 60px;
+    }
+
+    footer a {
+
+    }
+    footer a:hover {
+        text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 600px) {
+        footer {
+            flex-direction: column;
+            max-height:none;
+            align-items:center;
+            }
+        footer > div {
+            width: 94%;
+        }
     }
 </style>
 <script>
@@ -175,8 +210,18 @@
             </article>
         </details>
     </main>
-    <footer>
-        <p id="tf"></p>
+    <footer class="flex-c">
+        <div>
+            <a href="https://discord.com/invite/8RhzKJ" target="_blank">
+                <img src="img/discordlogo.png" alt="SDP Discord">
+                <p>Sist. Distrib. Paralelos</p>
+            </a>
+        </div>
+        <div>
+            <a href="https://web.microsoftstream.com/" target="_blank">
+            <img src="img/mstreamlogo.png" alt="Microsoft Stream">
+            <p>Aulas Online</p>
+        </a></div>  
     </footer>
 </body>
 </html>
