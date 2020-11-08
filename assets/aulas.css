@@ -142,3 +142,9 @@ body {
             flex: 94%;
         }
     }
+
+
+    /* ESPECIFICOS QUIZ DW */
+    mark {
+        background-color: green;
+      }
